@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ImgS</string>
+    <string name="EmailHint">Enter Email</string>
+    <string name="PWHint">Enter PW</string>
+    <string name="SignInBT">Sign In</string>
+    <string name="SignUpBT">Sign Up</string>
+    <string name="CameraText">Click to take photo</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="Usernamehint">Enter Username</string>
+    <string name="BioHint">Enter Bio, maximum 500 ch</string>
+    <string name="PhototHint">Click Here to Take a Photo</string>
+    <string name="confirm_pwHint">Confirm PW</string>
+    <string name="enter_usernamehint">Enter username</string>
+    <string name="enter_optional_biohint">Enter Optional Bio</string>
+    <string name="loginTitle">TextView</string>
+    <string name="login_description">The name of this app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

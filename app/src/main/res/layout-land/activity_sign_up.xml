@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    tools:context=".Activity.SignUp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/TempAvatar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/SignUpemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/EmailHint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/TempAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/TempAvatar" />
+
+    <TextView
+        android:id="@+id/ClickTakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CameraText"
+        app:layout_constraintBottom_toBottomOf="@+id/TempAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TempAvatar"
+        app:layout_constraintTop_toTopOf="@+id/TempAvatar" />
+
+    <EditText
+        android:id="@+id/SignUppw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/PWHint"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/SignUpemail"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpemail" />
+
+    <EditText
+        android:id="@+id/SignUppw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/confirm_password"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/SignUppw1"
+        app:layout_constraintTop_toBottomOf="@+id/SignUppw1" />
+
+    <EditText
+        android:id="@+id/SignUpusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Usernamehint"
+        app:layout_constraintStart_toEndOf="@+id/SignUpemail"
+        app:layout_constraintTop_toTopOf="@+id/SignUpemail" />
+
+    <EditText
+        android:id="@+id/SignUpbio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/BioHint"
+        app:layout_constraintStart_toStartOf="@+id/SignUpusername"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpusername" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/SignUpBT"
+        android:onClick="doSignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
